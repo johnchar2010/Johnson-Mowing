@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="services.css">
+    </head>
+    <body>
+        <header>
+            <a href="./index.html"><img class="header-image" src="./images/mow.jpg" alt="image link back to main page"/></a>
+            <div class="header-links">
+                    <a class="header-link" href="./services.html">
+                        Services
+                    </a>
+                    <a class="header-link" href="./about.html">
+                        About
+                    </a>
+                    <a class="header-link" href="./contact.html">
+                        Contact
+                    </a>
+            </div> 
+        </header>
+
+        <main>
+            <div class="linebreak"></div>
+            <div class="grid-container">
+                <div class="grid-cell" style="grid-column: 1 / 2; grid-row: 1 / 2;">Basic
+                    <ul class="list">
+                        <ul>- No mowing lines</ul> 
+                        <ul>- No grass cleanup</ul>
+                    </ul>
+                </div>
+                <div class="grid-cell" style="grid-column: 2 / 3; grid-row: 1 / 2;">Standard
+                    <ul class="list">
+                        <ul>- Grass cleanup</ul>
+                    </ul>
+                </div>
+                <div class="grid-cell" style="grid-column: 3 / 4; grid-row: 1 / 2;">Premium
+                    <ul class="list">
+                        <ul>- Mowing lines</ul>
+                        <ul>- Grass cleanup</ul>
+                        <ul>- Weedwacking</ul>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="h2">Can't Decide? Use this form to find which option is best for You</h2>
+
+            <form id="instumement" class="form">
+                <label for="instumement">How big is your lawn?</label>
+                <select id="instumement">
+                    <option>1/2 acre</option>
+                    <option>1 acre</option>
+                    <option>2 acre</option>
+                    <option>3+ acre</option>
+                </select>
+                </label>
+                <br>
+
+                <p>How much money are you wiling to spend?</p>
+                <input type="radio" id="pearl jam" name="teacher" checked="true">
+                <label for="pearl jam">$50</label><br>
+                <input type="radio" id="nirvana" name="teacher">
+                <label for="nirvana">$100</label><br>
+                <input type="radio" id="alice in chains" name="teacher">
+                <label for="alice in chains">$150</label><br>
+                <input type="radio" id="pantera" name="teacher">
+                <label for="pantera">$200+</label><br>
+
+                <p>Do you prefer Weed wacking and grass clipping removal?</p>
+                <input type="checkbox" id="pepperoni" name="pizza">
+                <label for="pepperoni">Yes</label><br>
+                <input type="checkbox" id="pineapple" name="pizza">
+                <label for="pineapple">No</label><br>
+               
+
+                <p>Do you prefer mowing lines?</p>
+                <input type="radio" id="no" name="Question">
+                <label for="no">No</label><br>
+                <input type="radio" id="yes" name="Question">
+                <label for="yes">Yes</label><br>
+
+
+                <button type="submit">Submit Application</button>
+            </form>
+
+            <p id="resultParagraph" class="standard"></p>
+
+        </main>
+        <script src="services.js"></script>
+
+    </body>
+</html>
